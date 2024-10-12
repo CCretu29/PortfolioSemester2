@@ -1,0 +1,239 @@
+:root {
+    --black: #131212;
+    --light-grey: #F1EEED;
+    --mauve: #A57D88;
+    --dark-mauve: #864A56;
+    --light-pink: #FFE3E8;
+    --dark-pink: #f5aebad1;
+    --lily: #a16672f4;
+}
+
+/* pokemon style */
+.jigglypuff {
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+    border-radius: 50%;
+    background-color: pink;
+    position: relative;
+    animation: jigglypuff 1.5s infinite ease-in-out;
+}
+
+.eyes {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+}
+
+.eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.eye::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.mouth {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 10px;
+    border-radius: 30%;
+    background-color: black;
+    animation: mouth 1.5s infinite ease-in-out;
+}
+
+.arm {
+    position: absolute;
+    top: 100%;
+    width: 10px;
+    height: 10px;
+    border-radius: 40px;
+    background-color: pink;
+}
+
+.left {
+    left: 10%;
+}
+
+.right {
+    right: 20%;
+}
+
+.hand {
+    position: absolute;
+    bottom: 0px;
+    /* Moved to bottom for full wave visibility */
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    background-color: black;
+    transform-origin: bottom 10%;
+    /* Set transform origin for better waving effect */
+    animation: wave 1.5s infinite ease-in-out;
+}
+
+@keyframes jigglypuff {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes mouth {
+    0% {
+        width: 50px;
+    }
+
+    50% {
+        width: 30px;
+    }
+
+    100% {
+        width: 50px;
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-60deg);
+        /* Increased rotation for more noticeable wave */
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+/* pokemon style */
+
+
+/* video style */
+.filmstrip {
+    --background: rgba(0, 0, 0, 0.758);
+    --size: 10px;
+    width: 1200px;
+    text-align: center;
+    /* margin: 10px; */
+    background-image:
+        linear-gradient(to right, var(--background) var(--size), transparent var(--size)),
+        linear-gradient(to bottom, var(--background) var(--size), transparent var(--size)),
+        linear-gradient(to right, var(--background) var(--size), transparent var(--size)),
+        linear-gradient(to bottom, var(--background) var(--size), transparent var(--size)),
+        linear-gradient(to bottom, transparent var(--size), var(--background) var(--size));
+    background-size: calc(var(--size) * 2) var(--size), calc(var(--size) * 2) var(--size), calc(var(--size) * 2) var(--size), calc(var(--size) * 2) var(--size), 100% calc(100% - var(--size) * 3);
+    background-repeat: repeat-x;
+    background-position: 0 var(--size), top left, 0 calc(100% - var(--size)), bottom left, 0 var(--size);
+    padding: calc(var(--size) * 3) calc(var(--size) * 2.5);
+    box-sizing: border-box;
+}
+
+
+/* Base styles for columns */
+.column {
+    display: inline-block;
+    margin: 2%;
+    padding: 1.5em;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--black);
+    box-shadow: 0 8px 8px rgba(140, 10, 157, 0.1);
+}
+
+
+/* Make buttons bigger and responsive */
+.table-container {
+    margin-top: 30px;
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.table-container .column {
+    padding: 1em;
+    margin: 1%;
+}
+
+.table-container .column h5 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.table-container .column img {
+    max-width: 140%;
+    height: 22vh;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Drop shadow */
+}
+
+.filmstrip h3 {
+    text-align: center;
+    color: var(--light-pink);
+}
+
+.column p {
+    text-align: center;
+    color: var(--light-pink);
+}
+
+/* video style */
+
+/* explain video style */
+.explain {
+    background-color: var(--lily);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    min-height: 50px;
+    max-width: 80%;
+    margin: 5% 0 5% 10%;
+    border-radius: 24px;
+    flex-wrap: wrap;
+}
+
+.explain p {
+    text-align: justify;
+    max-width: 700px;
+    font-family: "Robo";
+    font-size: 18px;
+}
+
+/* explain video style */
+
+hr {
+    border: 1.2px solid var(--dark-mauve);
+    width: 84%;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" a href="css/stylesheet.css"> <!--this is the link to my Css code-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-...your-integrity-hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Profile page</title>
+</head>
+
+<body>
+
+  <div class="heather">
+    <h1>My Profile</h1>
+  </div>
+
+  <!-- Dropdown Button -->
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home page</a>
+      <a href="Interactive_media_products.html">Interactive media products</a>
+      <a href="Development_and_version_control.html">Development and version control</a>
+      <a href="Iterative_design.html">Iterative design</a>
+      <a href="Personal_leadership.html">Personal leadership</a>
+      <a href="Professional_standard.html">Professional standard</a>
+      <a href="profile_page.html">Profile page</a>
+      <a href="video.html">Video page</a>
+    </div>
+  </div>
+
+  <div class="about">
+    <!--the containers are called different so when i edit one container the others won t change with the same style-->
+    <div class="image-container">
+      <img src="photos/my_work/profile_page_pic.JPG" alt="profile picture" class="image">
+      <div class="overlay">
+        <div class="name">Claudia</div>
+      </div>
+    </div>
+
+    <div class="text-container">
+      <!--short introduction about myself-->
+      <p> Hello, I am a Media Design student that is always exited to learn new things. In my academic pursuits, I bring
+        a unique background,
+        having previously graduated as a nurse in my home country. My approach to both academic and professional
+        endeavors is characterized by creativity, keen
+        intuition, and a steadfast commitment to organization and punctuality. I believe these qualities contribute to
+        my ability to navigate the intricate demands of my chosen fields.
+
+        Beyond my academic and professional pursuits, I find solace and inspiration in the simple pleasures of life.
+        Long walks and the immersive experience of reading books serve as both a source of relaxation and a means to
+        stimulate my intellectual curiosity.I am good at design and have knowledge in HTML and CSS. I just started to
+        learn JavaScript and I find it very interesting.
+        I love the sea, coffee and rock music.
+      </p>
+    </div>
+  </div>
+
+  <hr style="border: solid 3px var(--dark-mauve);">
+
+  <!-- SKILLS I HAVE -->
+  <div class="title">
+    <h2>Skills</h2>
+  </div>
+
+  <div class="container-progress">
+    <h4>HTML</h4>
+    <div class="progress1 progress-moved">
+      <div class="progress-bar1">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-progress">
+    <h4>CSS</h4>
+    <div class="progress2 progress-moved">
+      <div class="progress-bar2">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-progress">
+    <h4>JavaScript</h4>
+    <div class="progress3 progress-moved">
+      <div class="progress-bar3">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-progress">
+    <h4>Back-end development & database</h4>
+    <div class="progress4 progress-moved">
+      <div class="progress-bar4">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-progress">
+    <h4>Communication</h4>
+    <div class="progress5 progress-moved">
+      <div class="progress-bar5">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-progress">
+    <h4>Photography</h4>
+    <div class="progress6 progress-moved">
+      <div class="progress-bar6">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-progress">
+    <h4>UX/UI Design</h4>
+    <div class="progress7 progress-moved">
+      <div class="progress-bar7">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-progress">
+    <h4>UX/UI Research</h4>
+    <div class="progress8 progress-moved">
+      <div class="progress-bar8">
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS I HAVE -->
+
+  <hr style="border: solid 3px var(--dark-mauve);">
+
+  <!-- slideshow hobbies -->
+
+  <div class="title">
+    <h2>Hobbies</h2>
+  </div>
+
+  <div class="slideshow-hobbies">
+    <div class="pic">
+      <img src="photos/my_work/reading_hobbie.jpg" alt="Slide 1">
+      <p>READING</p>
+    </div>
+    <div class="pic">
+      <img src="photos/my_work/photo_hobbie.jpg" alt="Slide 2">
+      <p>PHOTOGRAPHY</p>
+    </div>
+    <div class="pic">
+      <img src="photos/my_work/bike_hobbie.jpg" alt="Slide 3">
+      <p>LONG WALKS</p>
+    </div>
+    <div class="pic">
+      <img src="photos/my_work/rock_hobbie.jpg" alt="Slide 3">
+      <p>LISTENING TO ROCK MUSIC</p>
+    </div>
+    <div class="pic">
+      <img src="photos/my_work/travel_hobbie.jpg" alt="Slide 3">
+      <p>TRAVELING</p>
+    </div>
+    <!-- Add more slides as needed -->
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+
+  <!-- slideshow hobbies -->
+
+  <hr style="border: solid 3px var(--dark-mauve);">
+
+  <!-- other work -->
+
+  <!-- project1 -->
+  <div class="content">
+
+    <div class="text">
+      <h2>Otter and logos</h2>
+
+      <p>This project is about a platform that uses AI to teach users mathematic. My part in this project so far was to
+        come up with some logo ideas and design our mascot.
+        The mascot is an otter. Here are the models that I created as an idea of what we want. This are the first
+        prototypes but there will be more to come.
+      </p>
+
+    </div>
+
+
+    <div class="image-section">
+      <div class="slideshow-container">
+        <img class="slide" src="photos/my_work/otter.jpg" alt="Slide 1">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- project1 -->
+  <div class="content">
+
+    <div class="text">
+      <h2>Floating otter</h2>
+
+      <p>This is a floating otter created with HTML and CSS. This is a temporary design version that we needed to deploy
+        as an idea.
+        There will be more otter design if the idea is approved and financed and there I will be abe to use the
+        iterative precess that I learned here.
+        I also started to work at the front-end for this project using JavaScript, React and GSAP. I only used
+        JavaScript for now and I am learning the other two as I go with my work.
+      </p>
+
+    </div>
+
+
+    <div class="image-section">
+      <div class="slideshow-container">
+        <img class="slide" src="photos/my_work/otter2.jpg" alt="Slide 1">
+      </div>
+    </div>
+
+  </div>
+
+  <hr style="border: solid 3px var(--dark-mauve);">
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- floating nav bar for other pages -->
+  <div class="navigation">
+    <ul>
+      <li><a href="index.html">Home page</a></li>
+      <li><a href="Interactive_media_products.html">Interactive media products</a></li>
+      <li><a href="Development_and_version_control.html">Development and version control</a></li>
+      <li><a href="Iterative_design.html">Iterative design</a></li>
+      <li><a href="Personal_leadership.html">Personal leadership</a></li>
+      <li><a href="Professional_standard.html">Professional standard</a></li>
+      <li><a href="profile_page.html">Profile page</a></li>
+      <li><a href="video.html">Video page</a></li>
+    </ul>
+  </div>
+
+
+  <footer>
+    <h3>Contact</h3>
+    <ul>
+      <li><span><i class="fa-solid fa-envelope"></i></span> c.cretu@student.fontys.nl</li>
+    </ul>
+
+    <div class="logo">
+      <img src="photos/my_work/logo_final.png" alt="logo">
+    </div>
+
+  </footer>
+
+
+  <!-- slideshow script -->
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      const slides = document.querySelectorAll(".slideshow-hobbies .pic"); // Corrected selector here
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+  </script>
+
+  <!-- slideshow script -->
+
+
+</body>
+
+</html>
